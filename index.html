@@ -3,29 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promociones y Referidos - N26</title>
+    <title>¡Gana 15€ con N26!</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Promociones y Referidos</h1>
+        <h1>¡Gana 15€ con N26!</h1>
+        <nav>
+            <ul>
+                <li><a href="#promo">Promoción</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section id="n26">
-            <h2>¡GANA 15€ CON N26!</h2>
-            <p>✨ Abre una cuenta en el banco N26 y gana 15€ al gastar tan solo 15€ con tu tarjeta. ¡Así de fácil! N26 nos premiará a ambos con 15 €.</p>
-            <p>Regístrate en mi link de invitación:</p>
-            <a href="https://app.n26.com/referral/ricardoa9360" target="_blank" class="link-invitacion">https://app.n26.com/referral/ricardoa9360</a>
-            <p>o usa mi código <strong>ricardoa9360</strong>.</p>
-            <p>Recuerda aceptar las cookies y no te salgas de la página hasta completar el proceso.</p>
-            <p>Si eliges el plan N26 Estándar, tanto la cuenta como la tarjeta son completamente gratuitas.</p>
-            <p>Haz una compra de 15€ o más (puedes usar la tarjeta virtual que es gratis), y ¡recibirás 15€ directamente en tu cuenta!</p>
+        <section id="promo">
+            <div class="contenido-promo">
+                <h2>¿Cómo Funciona?</h2>
+                <p>✨ Abre una cuenta en el banco N26 y gana 15€ al gastar tan solo 15€ con tu tarjeta. ¡Así de fácil! N26 nos premiará a ambos con 15 €.</p>
+                <a href="https://app.n26.com/referral/ricardoa9360" target="_blank" class="btn">Regístrate Aquí</a>
+                <p>o usa mi código <strong>ricardoa9360</strong>.</p>
+                <p>Recuerda aceptar las cookies y no te salgas de la página hasta completar el proceso.</p>
+                <p>Si eliges el plan N26 Estándar, tanto la cuenta como la tarjeta son completamente gratuitas.</p>
+                <p>Haz una compra de 15€ o más (puedes usar la tarjeta virtual que es gratis), y ¡recibirás 15€ directamente en tu cuenta!</p>
+            </div>
+            <img src="https://example.com/imagen-n26.jpg" alt="N26" class="imagen-promo">
+        </section>
+
+        <section id="testimonios">
+            <h2>Lo que Dicen Nuestros Usuarios</h2>
+            <div class="testimonio">
+                <p>“¡Gracias a N26, ahora ahorro más en mis compras! La tarjeta es muy fácil de usar.”</p>
+                <strong>- Ana G.</strong>
+            </div>
+            <div class="testimonio">
+                <p>“Abrí mi cuenta sin complicaciones y ya recibí mis 15€. ¡Altamente recomendado!”</p>
+                <strong>- Carlos R.</strong>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contáctame</h2>
+            <form id="form-contacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" required></textarea>
+
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Promociones y Referidos</p>
+        <p>&copy; 2024 Promociones y Referidos - Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+        // Funcionalidad para enviar el formulario de contacto
+        document.getElementById("form-contacto").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("¡Gracias por tu mensaje! Me pondré en contacto contigo pronto.");
+            this.reset();
+        });
+    </script>
 </body>
 </html>
